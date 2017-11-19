@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    margin-top: 20px;
+}
+
+.profile-columns {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.head {
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+.name-headline {
+    line-height: 25px;
+}
+
+.head .name-headline {
+    color: #ffffff;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.head .name-headline h1, .head .name-headline h2 {
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+}
+
+.name-headline h1 {
+    text-transform: uppercase;
+}
+
+.head .image {
+    background-size: cover; 
+    height: 400px;
+    background-position: 50% 50%;
+}
+
+.body {
+    padding: 0px 20px;
+}
+
+.body .name-headline {
+    display: none;
+}
+
+.bio {
+    line-height: 40px;
+    font-size: 1rem;
+    color: rgb(51, 51, 51);
+}
+
+.interests {
+    margin-top: 10px;
+}
+
+.interests ul.inline {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.interests .interest {
+    margin-right: 10px;
+    color: rgb(119, 119, 119);
+    font-size: 0.9rem;
+}
+
+.meta {
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.meta .meta-header {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.meta .meta-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.social-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons .social-link a {
+    font-size: 1.875rem;
+    margin: 5px;
+    color: rgba(54,71,78,.7);
+}
+
+.social-icons .social-link a:hover {
+    color: #36474e;
+}
+
+.social-icons .social-link a {
+    text-decoration: none;
+}
+
+
+/* Tablet */
+@media (min-width: 768px) {
+    .bio {
+        max-width: 510px;
+        margin: 0 auto;
+    }
+}
+
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .head .name-headline {
+        display: none;
+    }
+
+    .profile-columns {
+        flex-direction: row;
+    }
+
+    .head {
+        width: calc(100%/1.5);
+    }
+
+    .head .image {
+        height: 100vh;
+    }
+
+    .body {
+        padding: 100px 60px;
+        overflow: scroll;
+    }
+
+    .body .name-headline {
+        display: block;
+    }
+
+    .body .bio {
+        margin-top: 20px;
+    }
+
+    .interests ul.inline {
+        justify-content: start;
+    }
+
+    .meta {
+        text-align: left;
+    }
+
+    ul.social-icons {
+        justify-content: start;
+    }
+}
