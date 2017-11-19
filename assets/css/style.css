@@ -64,7 +64,7 @@ h2 {
 .head .image {
     background-size: cover; 
     height: 400px;
-    background-position: 50% 50%;
+    background-position: top;
 }
 
 .body {
